@@ -9,12 +9,12 @@
     "slider"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Chris Freeman",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/cafreeman/ember-swipe",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
