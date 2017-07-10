@@ -3,7 +3,7 @@ import { describe, it } from 'mocha';
 import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
 
-describe('Integration | Component | ember swipe', function() {
+describe.skip('Integration | Component | ember swipe', function() {
   setupComponentTest('ember-swipe', {
     integration: true
   });
