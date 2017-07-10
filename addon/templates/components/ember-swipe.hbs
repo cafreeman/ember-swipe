@@ -1,0 +1,12 @@
+<div class="swipe-wrapper">
+  {{yield
+    swipe
+    (hash
+      next=(action 'next')
+      prev=(action 'prev')
+      slide=(action 'slide')
+      getPos=(action 'getPos')
+      getNumSlides=(action 'getNumSlides')
+    )
+  }}
+</div>

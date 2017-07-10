@@ -1,0 +1,1 @@
+export { default } from 'ember-swipe/components/ember-swipe';
