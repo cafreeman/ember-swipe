@@ -14,10 +14,10 @@ module.exports = {
   },
 
   treeForVendor(vendorTree) {
-    const momentTree = new Funnel(path.dirname(require.resolve('swipe/swipe.js')), {
-      files: ['swipe.js']
+    const swipeTree = new Funnel(path.dirname(require.resolve('swipe-js-iso')), {
+      files: ['swipe.js'],
     });
 
-    return new MergeTrees([vendorTree, momentTree]);
+    return new MergeTrees([vendorTree, swipeTree]);
   }
 };
