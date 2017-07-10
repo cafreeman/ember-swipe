@@ -1,26 +1,28 @@
 # ember-swipe
 
-This README outlines the details of collaborating on this Ember addon.
+This Ember addon is a direct port of the fantastic [react-swipe](https://github.com/voronianski/react-swipe) to Ember.
 
-## Installation
+It provides a wrapper for [Swipe.js](https://github.com/voronianski/swipe-js-iso) and gives you a component that makes it easy to create a swipeable slider in your UI.
 
-* `git clone <repository-url>` this repository
-* `cd ember-swipe`
-* `npm install`
+# Installation
 
-## Running
+`ember install ember-swipe`
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+You will also need to add the following styles to your stylesheet:
 
-## Running Tests
-
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+```css
+.swipe-container {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrapper > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+```
