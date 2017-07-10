@@ -1,6 +1,6 @@
 {
   "name": "ember-swipe",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
     "ember-addon",
@@ -21,9 +21,9 @@
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.3.0",
     "broccoli-funnel": "^1.2.0",
     "broccoli-merge-trees": "^2.0.0",
+    "ember-cli-babel": "^6.3.0",
     "ember-cli-htmlbars": "^2.0.1",
     "swipe-js-iso": "^2.0.3"
   },
