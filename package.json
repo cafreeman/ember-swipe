@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "swipe",
+    "ember-swipe",
+    "slider"
   ],
   "license": "MIT",
   "author": "",
