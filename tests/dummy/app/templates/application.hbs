@@ -1,3 +1,29 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="center">
+  <h1>EmberSwipe.js</h1>
+  <h2>Open this page from a mobile device (real or emulated).</h2>
+  <h2>You can pass <a href="https://github.com/voronianski/swipe-js-iso#config-options">Swipe.js options</a> as query params.</h2>
 
-{{outlet}}
+  {{#ember-swipe
+    swipeOptions=(hash
+      startSlide=0
+      speed=300
+      disableScroll=true
+      continuous=true
+    )
+    containerStyles="mySwipe"
+    onDidInsertElement=(action 'getSlideRef')
+  }}
+    {{#each slides as |slide|}}
+      <div>
+        <div class="item">
+          {{slide}}
+        </div>
+      </div>
+    {{/each}}
+  {{/ember-swipe}}
+
+  <div>
+    <button type="button" onClick={{action 'previousSlide'}}>Previous</button>
+    <button type="button" onClick={{action 'nextSlide'}}>Next</button>
+  </div>
+</div>
